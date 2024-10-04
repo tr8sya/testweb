@@ -1,0 +1,161 @@
+/* General styling */
+html, body {
+    height: 100%; /* Ensure the body takes full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Align children (header, content, footer) in a column */
+    font-family: Arial, sans-serif; /* Change font family */
+    background-color: #f4f4f4; /* Light background color */
+}
+
+header, footer {
+    background-color: #007bff; /* Header and footer background color */
+    color: white; /* Text color for header and footer */
+    padding: 10px; /* Padding for header and footer */
+    text-align: center; /* Center text in header and footer */
+}
+
+.container {
+    flex: 1; /* Allow the container to grow and fill the available space */
+    width: 80%; /* Set container width */
+    margin: 20px auto; /* Center the container with margin */
+    text-align: center; /* Center text inside the container */
+}
+
+.content {
+    margin-top: 20px; /* Space above content */
+}
+
+/* Form styling */
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+label {
+    margin-top: 10px; /* Space above labels */
+    font-weight: 500; /* Bold text for labels */
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px; /* Inner padding for inputs */
+    margin-top: 5px; /* Space above input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size for inputs */
+    width: 80%; /* Set width for inputs */
+}
+
+/* Search input styling */
+#patient-search {
+    width: 80%; /* Adjust width as needed */
+    padding: 10px; /* Inner padding */
+    margin-top: 5px; /* Space above input */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+/* Dropdown styling */
+.dropdown {
+    display: none; /* Hidden by default */
+    border: 1px solid #ccc; /* Light gray border */
+    position: absolute; /* Position below input */
+    background-color: white; /* White background */
+    z-index: 1; /* Stack above other elements */
+    max-height: 150px; /* Max height for dropdown */
+    overflow-y: auto; /* Scrollable if too many items */
+    width: 80%; /* Full width matching the input */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Individual dropdown item styling */
+.dropdown div {
+    padding: 10px; /* Inner padding */
+    cursor: pointer; /* Pointer cursor */
+    color: #333; /* Dark text color */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for dropdown items */
+.dropdown div:hover {
+    background-color: #007bff; /* Match button color */
+    color: white; /* White text on hover */
+}
+
+button {
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Inner padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    margin: 10px 6px; /* Space around buttons */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Visitor table styling */
+.visitor-table {
+    width: 100%; /* Full width for table */
+    border-collapse: collapse; /* Merge borders */
+    margin-top: 20px; /* Space above table */
+}
+
+.visitor-table, th, td {
+    border: 1px solid black; /* Solid black border */
+}
+
+th, td {
+    padding: 12px; /* Inner padding for cells */
+    text-align: center; /* Center text in cells */
+}
+
+th {
+    background-color: #213a67; /* Dark blue background for headers */
+    color: white; /* White text for headers */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+.nav-button-container {
+    display: inline-block; /* Ensures the container stays inline */
+    margin-left: 10px; /* Adjust spacing as needed */
+}
+
+.nav-button-container .button {
+    display: inline-block; /* Ensures buttons are inline */
+    margin: 0 5px; /* Adds some spacing between buttons */
+}
+
+.button {
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.btn-logout {
+    background-color: #dc3545; /* Logout button color */
+}
+.btn-logout:hover {
+    background-color: #c82333; /* Darker shade on hover */
+}

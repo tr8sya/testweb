@@ -1,0 +1,144 @@
+/* General styling */
+html, body {
+    height: 100%; /* Ensure the body takes full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Align children (header, content, footer) in a column */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    flex: 1; /* Allow the container to grow and fill the available space */
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.visitor-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.visitor-table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px; /* Adjust padding for smaller font */
+    text-align: center;
+    font-size: 12px; /* Adjust the font size for better spacing */
+}
+
+th {
+    background-color: #213a67;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td a {
+    margin-right: 10px; /* Space between each icon */
+    color: #007bff; /* Change the icon color to match your theme */
+    font-size: 14px; /* Adjust the icon size */
+}
+
+td a:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+/* Ensure IC stays in one line */
+td {
+    white-space: nowrap; /* Prevent text from breaking into multiple lines */
+}
+
+/* Ensure Update/Delete/Exit links stay on one line */
+td a {
+    white-space: nowrap; /* Prevent the links from wrapping to the next line */
+    display: inline-block;
+}
+
+/* Optional: Add some margin between links for better spacing */
+td a {
+    margin-right: 5px; /* Space between each link */
+}
+
+td a:last-child {
+    margin-right: 0; /* Remove margin from the last link */
+}
+
+.btn {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 6px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-logout {
+    background-color: #f44336; 
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 6px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #45a049; 
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.search-box {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+}
+.search-suggestions {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+}
+.search-suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    list-style-type: none; /* Remove bullet points */
+}
+.search-suggestions li:hover {
+    background-color: #f0f0f0;
+}

@@ -1,0 +1,162 @@
+/* General styling */
+html, body {
+    height: 100%; /* Full height for the page */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove padding */
+}
+
+body {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout */
+    font-family: Arial, sans-serif; /* Default font family */
+    background-color: #f4f4f4; /* Light background */
+}
+
+header, footer {
+    background-color: #007bff; /* Blue color for header and footer */
+    color: white; /* White text color */
+    padding: 15px; /* Padding for header and footer */
+    text-align: center; /* Center the text */
+    font-size: 18px; /* Font size for header and footer */
+}
+
+.container {
+    flex: 1; /* Flex-grow for main container */
+    width: 80%; /* Set the width */
+    max-width: 600px; /* Maximum width of the container */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Inner padding */
+    background-color: white; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center align text */
+}
+
+/* Form styling */
+form {
+    display: flex; /* Flex layout for form */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center form items */
+}
+
+label {
+    margin-top: 10px; /* Space above label */
+    font-weight: bold; /* Bold text for labels */
+    color: #333; /* Darker text color */
+}
+
+input[type="text"], input[type="number"], input[type="password"], input[type="submit"] {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Inner padding for input fields */
+    margin-top: 8px; /* Space above input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size */
+    background-color: #f9f9f9; /* Light background */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background for submit button */
+    color: white; /* White text for submit button */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Search input styling */
+#patientSearch {
+    width: 80%; /* Width for the search input */
+    padding: 10px; /* Inner padding */
+    margin-top: 8px; /* Space above input */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+/* Dropdown styling */
+.dropdown {
+    display: none; /* Hidden by default */
+    border: 1px solid #ccc; /* Border for dropdown */
+    position: absolute; /* Position below input */
+    background-color: white; /* White background */
+    z-index: 1000; /* Bring it above other elements */
+    max-height: 150px; /* Max height for dropdown */
+    overflow-y: auto; /* Scrollable content */
+    width: 80%; /* Match input width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Dropdown items styling */
+.dropdown div {
+    padding: 10px; /* Padding inside dropdown */
+    cursor: pointer; /* Pointer cursor */
+    color: #333; /* Dark text color */
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+/* Hover effect for dropdown items */
+.dropdown div:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Button styling */
+button, .button {
+    background-color: #007BFF; /* Blue background for buttons */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    margin: 10px 6px; /* Spacing around buttons */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+button:hover, .button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-logout {
+    background-color: #dc3545; /* Red background for logout button */
+}
+
+.btn-logout:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Table styling */
+.visitor-table {
+    width: 100%; /* Full width for table */
+    border-collapse: collapse; /* Remove gaps between borders */
+    margin-top: 20px; /* Space above table */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.visitor-table, th, td {
+    border: 1px solid #ddd; /* Light border */
+}
+
+th, td {
+    padding: 12px; /* Padding inside cells */
+    text-align: center; /* Center text */
+}
+
+th {
+    background-color: #213a67; /* Dark blue header */
+    color: white; /* White text in header */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+/* Navigation button styling */
+.nav-button-container {
+    display: inline-block; /* Inline container for buttons */
+    margin-left: 10px; /* Spacing */
+}

@@ -1,0 +1,253 @@
+/* staff_login */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    width: 360px;
+    text-align: center;
+}
+
+.extra-options {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 410px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 35px;
+    color: #333;
+    font-weight: 700;
+}
+
+input[type="text"], input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 9px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007BFF;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #35963a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 12px;
+}
+
+button:hover {
+    background-color: #095021;
+    transform: scale(1.05);
+}
+
+.error-message {
+    color: red;
+    margin-top: 15px;
+}
+
+.register-link, .visitor-signin {
+    margin-top: 10px;
+}
+
+.register-link a, .visitor-signin a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link a:hover, .visitor-signin a:hover {
+    text-decoration: underline;
+}
+
+/* Help icon */
+.help-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px;
+    z-index: 10; /* Make sure it's above other elements */
+}
+
+.help-icon img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.help-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.help-icon img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.faq-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Similar style to login */
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    margin: 50px auto; /* Center the FAQ container */
+}
+
+.faq h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.faq h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 1.4; /* Add line spacing for headings */
+}
+
+.faq p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6; /* Add line spacing (1.6 is a good ratio) */
+}
+
+/* help.php */
+
+.contact-info {
+    text-align: center; /* Center the text */
+    margin-top: 10px;   /* Add space above the contact info */
+    line-height: 1.6;   /* Add consistent line spacing similar to other sections */
+}
+
+/* Add line spacing to general FAQ text */
+.faq p {
+    line-height: 1.6;   /* Adjust the line-height for all paragraphs */
+}
+
+/* Add some space between each question */
+.faq h3 {
+    margin-top: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #35963a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; /* Remove underline */
+}
+
+.back-button:hover {
+    background-color: #095021; /* Darker shade on hover */
+}
+
+/* staff register*/
+
+body {
+    background-image: url('background.jpg');
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="text"], input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.error-message {
+    color: red;
+    margin-top: 15px;
+}
+
+.register-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.register-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.success-message {
+    color: green;
+    margin: 10px 0;
+}
